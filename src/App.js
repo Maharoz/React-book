@@ -53,9 +53,12 @@ class App extends Component {
 
     return (
       <div className="App">
+     <div class="center">
+  <img src={logo} className="App-logo" alt="logo"/>
+</div>
         <h1>Welcome to React book</h1>
-        <input type="text" onChange={this.handleChange}/>
-        <button  onClick={this.showContent}>Post</button>
+        <input type="text" className = "form BookMarginLeft-30" onChange={this.handleChange}/>
+        <button className = "btn btn-primary" onClick={this.showContent}>Post</button>
         {posts}
       </div>
     );

@@ -26,3 +26,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.BookMarginLeft-30{
+  margin-right: 30PX;
+}
+
+.center {
+  text-align: center;
+  border: 3px solid black;
+  height: 80px;
+  background-color: black;
+}
