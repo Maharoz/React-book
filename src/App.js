@@ -62,7 +62,29 @@ class App extends Component {
         <input type="text" ref="some" className = "form BookMarginLeft-30 " onChange={this.handleChange}/>
         <button className = "btn btn-primary btnWidth" disabled={!this.state.input} onClick={this.showContent}>Post</button>
         {posts}
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    Developed with love by <a target="_blank" href="https://sites.google.com/view/porfoliomaharoz/home">Maharoz Alam</a> (<a target="_blank" href="https://sites.google.com/view/porfoliomaharoz/home">Mugdho)</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>
+                    <a target="_blank" href="https://github.com/Maharoz/React-book">Get Source Code</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
       </div>
+
+
+
     );
   }
 }
