@@ -11,7 +11,7 @@ class App extends Component {
       {id:'2',content:'hello test'}
     ],
     showPosts:true,
-    test : ''
+    
   }
  
   handleChange = (event) =>{
@@ -20,15 +20,16 @@ class App extends Component {
 
   }
 
-  showContent = () =>{  
-    let post = [...this.state.posts];
-    post.push({
-      id:'',
-      content: this.state.input
-    });
-    this.setState({posts:post});
-    this.refs.some.value='';
-    this.setState({input:''})   
+  showContent = () =>{     
+      let post = [...this.state.posts];
+    
+      post.push({
+        id:'',
+        content: this.state.input
+      });
+      this.setState({posts:post});
+      this.refs.some.value='';
+      this.setState({input:''})    
   }
 
 
@@ -39,9 +40,11 @@ class App extends Component {
      posts =(
       <div>
         {this.state.posts.map((posts,index) => {
+              
         return <Post
-        content={posts.content}
+        content={posts.content}          
       />
+         
      })}  
       </div>
      );
@@ -54,8 +57,8 @@ class App extends Component {
   <img src={logo} className="App-logo" alt="logo"/>
 </div>
         <h1>Welcome to React book</h1>
-        <input type="text" ref="some" className = "form BookMarginLeft-30" onChange={this.handleChange}/>
-        <button className = "btn btn-primary" onClick={this.showContent}>Post</button>
+        <input type="text" ref="some" className = "form BookMarginLeft-30 " onChange={this.handleChange}/>
+        <button className = "btn btn-primary btnWidth" disabled={!this.state.input} onClick={this.showContent}>Post</button>
         {posts}
       </div>
     );

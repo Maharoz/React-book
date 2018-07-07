@@ -37,3 +37,11 @@
   height: 80px;
   background-color: black;
 }
+
+.btnWidth{
+  width:200px;
+}
+
+.txtBox{
+  height : 100 px;
+}
