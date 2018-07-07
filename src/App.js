@@ -23,10 +23,11 @@ class App extends Component {
   showContent = () =>{     
       let post = [...this.state.posts];
     
-      post.push({
+      post.unshift({
         id:'',
         content: this.state.input
       });
+      
       this.setState({posts:post});
       this.refs.some.value='';
       this.setState({input:''})    
@@ -39,6 +40,7 @@ class App extends Component {
 
      posts =(
       <div>
+        
         {this.state.posts.map((posts,index) => {
               
         return <Post
