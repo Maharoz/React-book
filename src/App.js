@@ -7,8 +7,8 @@ class App extends Component {
   
   state={
     posts : [
-      {id:'1',content:'test post' },
-      {id:'2',content:'hello test'}
+      {id:'1',content:'This is test post number one' },
+      {id:'2',content:'This test post number two'}
     ],
     showPosts:true,
     

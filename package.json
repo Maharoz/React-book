@@ -2,7 +2,7 @@
   "name": "react-book",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://maharoz.github.io/react-book",
+  "homepage": "http://maharoz.github.io/React-book",
 
   "dependencies": {
     "bootstrap": "^4.1.1",
